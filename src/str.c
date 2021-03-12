@@ -40,17 +40,6 @@ char* str_pad_right(char* str, char pad, int len)
     return (str);
 }
 
-int str_truncate_to_int(const char* str, int start, int end)
-{
-    int n = 0;
-
-    for (int i = start; i < end; i++) {
-        n <<= 8;
-        n |= str[i];
-    }
-    return (n);
-}
-
 int int_to_str(int i, char *buf, int buf_len)
 {
     int j = 0;
