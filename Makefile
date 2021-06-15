@@ -18,9 +18,9 @@ all:    $(NAME)
 
 $(NAME):$(OBJ)
 	# BIN
-	gcc -o $(NAME) $(OBJ) $(CFLAGS)
+	$(CC) -o $(NAME) $(OBJ) $(CFLAGS)
 	# LIB
-	ar rcs $(NAME_LIB) $(OBJ)
+	$(AR) rcs $(NAME_LIB) $(OBJ)
 
 install:
 	# BIN
